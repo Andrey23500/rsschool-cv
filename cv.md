@@ -18,5 +18,28 @@ A well trained, hardworking and tenacious person looking to pursue a career in w
 
 4. First time using **GitHub**.
 
+## Code Example
+```
+function factorial(n)
+{
+  if (n < 0) throw "RangeError";   
+  let res=1;
+  let k=1;
+  while(k<=n) {
+    res*=k;
+    k++;
+  }
+  return res;
+    
+}
+```
+
+## Education
+Second year student at a technical university.
+
+
+## English
+
+**English level:** Pre-intermediate	(A2)
 
 
