@@ -2,7 +2,7 @@
 
 ******
 
-### Andrey Avsyanski 
+### Andrey Avsyanski
 
 ##### Contact information:
 
@@ -26,7 +26,7 @@ besides there’s a huge amount of free high quality resources for self-educatio
 I believe, that my ability to learn and to gain new skills will lead me through this path of becoming a proficient Frontend Developer.
 ##### Skills and Proficiency:
 * HTML5, CSS3
-* JavaScript 
+* JavaScript
 * Git, GitHub
 * Angular, Vue
 * VS Code, WebStorm
@@ -38,7 +38,7 @@ Define a function that takes an integer argument and returns a logical value tru
 function isPrime(num) {
   if(num <= 1) return false;
   for(let i = 2; i <= Math.sqrt(num); i++) {
-      if(num % i === 0) return false;   
+      if(num % i === 0) return false;
   }
   return true;
 }
