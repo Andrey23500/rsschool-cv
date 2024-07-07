@@ -1,11 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
-</head>
-<body>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>CV</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__logo">
+            <a href="#">
+              <img src="./assets/logo.svg" alt="logo" class="logo__img" />
+            </a>
+          </div>
+          <nav class="header__nav">
+            <ul class="list__nav">
+              <li class="list__item">
+                <a href="#about" class="item__link">About me</a>
+              </li>
+              <li class="list__item">
+                <a href="#skils" class="item__link">Skills</a>
+              </li>
+              <li class="list__item">
+                <a href="#code" class="item__link">Code</a>
+              </li>
+              <li class="list__item">
+                <a href="#projects" class="item__link">Projects</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="#contact" class="header__button">Contacts</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section id="about" class="about">
+        <div class="container">
+          <div class="about__inner">
+            <div class="inner__image">
+              <img class="image__img" src="./assets/me.png" alt="person" />
+            </div>
+            <div class="inner__info">
+              <h1 class="info__title">Andrey Avsanski</h1>
+              <p class="info__description">
+                A well trained, hardworking and tenacious person looking to
+                pursue a career in web development. In programming, I am
+                attracted by the opportunity to create projects that allow the
+                user to work simply and quickly.I have no real development
+                experience, but at the university I create small projects on
+                assignment.
+              </p>
+              <div id="contact" class="contacts">
+                <h2 class="contacts__title">Contacts</h2>
+                <p class="contacts__info">
+                  <strong>Github: </strong
+                  ><a href="https://github.com/Andrey23500">Andrey</a>
+                </p>
+                <p class="contacts__info">
+                  <strong>E-mail: </strong>andreyavs.00@gmail.com
+                </p>
+                <p class="contacts__info">
+                  <strong>Discord:</strong
+                  ><a href="https://discordapp.com/users/303099005095903253/"
+                    >Black wolf#0312</a
+                  >
+                </p>
+              </div>
+              <div class="language">
+                <h2 class="contacts__title">Language</h2>
+                <p class="language__paragraph">
+                  <strong>English</strong> - Intermediate
+                </p>
+                <p class="language__paragraph">
+                  <strong>Russian</strong> - Native
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skils" class="skils">
+        <div class="container">
+          <div class="skils__inner">
+            <h2 class="skils__title">Skils</h2>
+            <ul class="skils__list">
+              <li class="list__item">HTML5</li>
+              <li class="list__item">CSS3</li>
+              <li class="list__item">JavaScript</li>
+              <li class="list__item">Git, GitHub</li>
+              <li class="list__item">Angular, Vue</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="code" class="code">
+        <div class="container">
+          <div class="code__inner">
+            <h2 class="code__title">Code Example</h2>
+            <p class="code__description">
+              Define a function that takes an integer argument and returns a
+              logical value true or false depending on if the integer is a
+              prime.
+            </p>
+            <pre>
+            <code class="code__code">
+              function strCount(obj) {
+                  let count = 0;
+                  for(let el in obj) {
+                    if(typeof(obj[el]) === 'object') count += strCount(obj[el]);
+                    if(typeof(obj[el]) === 'string') count++;
+                  }
+                  return count;
+                }
+              </code>
+            </pre>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects">
+        <div class="container">
+          <div class="projects__inner">
+            <h2 class="projects__title">Projects</h2>
+            <div class="cards__projects">
+              <a
+                href="https://github.com/Andrey23500/TableStudent"
+                target="_blank"
+              >
+                <div class="card__item">
+                  <h3 class="card__item__title">Table Student</h3>
+                  <img src="./assets/TableStudent.png" alt="TableStudent" />
+                </div>
+              </a>
+              <a
+                href="https://andrey23500.github.io/BinaryTree/"
+                target="_blank"
+              >
+                <div class="card__item">
+                  <h3 class="card__item__title">Binary Tree</h3>
+                  <img src="./assets/BinaryTree.png" alt="BinaryTree" />
+                </div>
+              </a>
+              <a
+                href="https://andrey23500.github.io/virtual-piano/"
+                target="_blank"
+              >
+                <div class="card__item">
+                  <h3 class="card__item__title">Virtual piano</h3>
+                  <img src="./assets/VirtualPiano.png" alt="VirtualPiano" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <p>© 2024</p>
+          <a href="https://github.com/Andrey23500" target="_blank">
+            <img class="gitimg" src="./assets/git.png" alt="git" />
+          </a>
+          <a href="https://rs.school/js/" target="_blank"
+            ><img class="rsimg" src="./assets/rs_school_js.svg" alt="rslogo" />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
